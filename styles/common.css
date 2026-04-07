@@ -21,7 +21,7 @@
 #wrap main .collections_wrap .collections {}
 #wrap main .collections_wrap .collections .swiper {background-color: rgb(96, 255, 255);}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper {display: flex; gap:30px;}
-#wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide {text-align:center;}
+#wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide a {}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide h2 {margin-bottom:10px; line-height:1.3;}

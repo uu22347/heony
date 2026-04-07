@@ -6,9 +6,16 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>안상규벌꿀</title>
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- 플러그인, 웹글꼴 연결 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <!-- 개별 사용자 디자인 파일 -->
+    <link rel="shortcut icon" href="./images/common/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -56,9 +63,9 @@
                     </li>
                 </ul>
                 <ul class="user_menu">
-                    <li class="search"><a href="#"><img src="./images/common/icon_search.png" alt=""></a></li>
-                    <li class="cart"><a href="#"><img src="./images/common/icon_shop_cart.png" alt=""></a></li>
-                    <li class="my"><a href="#"><img src="./images/common/icon_user.png" alt=""></a></li>
+                    <li class="search"><a href="#"><img src="./images/common/icon_search.png" alt="검색"></a></li>
+                    <li class="cart"><a href="#"><img src="./images/common/icon_shop_cart.png" alt="장바구니"></a></li>
+                    <li class="my"><a href="#"><img src="./images/common/icon_user.png" alt="로그인"></a></li>
                 </ul>
             </div>
         </header>
@@ -67,6 +74,9 @@
                 <div class="swiper hero_bnr">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1">
+                            <a href="#"><img src="./images/common/main_banner_w.webp" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide2">
                             <a href="#"><img src="./images/common/main_banner_w.webp" alt=""></a>
                         </div>
                     </div>
@@ -83,19 +93,19 @@
                 </div>
                 <div class="option best_option">
                     <ul class="section">
-                        <li><a href="#">5만원 이하</a></li>
+                        <li class="active"><a href="#">5만원 이하</a></li>
                         <li><a href="#">5~10만원</a></li>
                         <li><a href="#">10~15만원</a></li>
                         <li><a href="#">15만원 이상</a></li>
                         <li><a href="#">명품선물</a></li>
                     </ul>
-                    <form action="#" method="get">
+                    <form action="#" method="get" class="sort">
                         <select name="sort_tabs" class="sort_tabs">
-                            <option value="">인기순</option>
-                            <option value="">추천순</option>
-                            <option value="">높은가격순</option>
-                            <option value="">낮은가격순</option>
-                            <option value="">최신순</option>
+                            <option value="popular">인기순</option>
+                            <option value="recommended">추천순</option>
+                            <option value="pricedesc">높은가격순</option>
+                            <option value="priceasc">낮은가격순</option>
+                            <option value="latest">최신순</option>
                         </select>
                     </form>
                 </div>
@@ -105,85 +115,69 @@
                         <div class="swiper best_slide">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product01.jpg" alt="">
-                                            <h2>7입 플라워 아카시아벌꿀 (각 15g x 7포)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product01.jpg" alt=""></a>
+                                        <h2>7입 플라워 아카시아벌꿀 (각 15g x 7포)</h2>
                                         <p>언제 어디서든 가볍게 즐길 수 있는 아카시아벌꿀</p>
                                         <p class="price">13,000원</p>
                                     </div>
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product02.jpg" alt="">
-                                            <h2>7입 플라워 밤나무벌꿀 (각 15g x 7포)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product02.jpg" alt=""></a>
+                                        <h2>7입 플라워 밤나무벌꿀 (각 15g x 7포)</h2>
                                         <p>언제 어디서든 가볍게 즐길 수 있는 밤나무벌꿀</p>
                                         <p class="price">14,000원</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide2">
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product03.jpg" alt="">
-                                            <h2>허니영 아카시아벌꿀 (300g)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product03.jpg" alt=""></a>
+                                        <h2>허니영 아카시아벌꿀 (300g)</h2>
                                         <p>맛과 향이 강하지 않은 은은하고 담백한 맛</p>
                                         <p class="price">29,000원</p>
                                     </div>
-                                    <div class="slide_wrap">
-                                            <a href="#">
-                                            <img src="./images/product/best_product04.jpg" alt="">
-                                            <h2>미니벌꿀 3종 세트 (각 130g x 3병)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                            <a href="#"><img src="./images/product/best_product04.jpg" alt=""></a>
+                                        <h2>미니벌꿀 3종 세트 (각 130g x 3병)</h2>
                                         <p>다양한 맛과 풍미를 갖춘 선물세트</p>
                                         <p class="price">43,000원</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide3">
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product05.jpg" alt="">
-                                            <h2>허니영 야생화벌꿀 (300g)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product05.jpg" alt=""></a>
+                                        <h2>허니영 야생화벌꿀 (300g)</h2>
                                         <p>다채롭고 진한 달콤함과 목넘김</p>
                                         <p class="price">24,000원</p>
                                     </div>
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product06.jpg" alt="">
-                                            <h2>허니트리 야생화벌꿀 (670g)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product06.jpg" alt=""></a>
+                                        <h2>허니트리 야생화벌꿀 (670g)</h2>
                                         <p>여러 종류의 꽃에서 모인 다양한 맛</p>
                                         <p class="price">45,000원</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide4">
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product07.jpg" alt="">
-                                            <h2>허니데이 아카시아벌꿀 (각 15g x 30포)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product07.jpg" alt=""></a>
+                                        <h2>허니데이 아카시아벌꿀 (각 15g x 30포)</h2>
                                         <p>일상에서 간편하게 즐기는 고품질 아카시아벌꿀</p>
                                         <p class="price">49,000원</p>
                                     </div>
-                                    <div class="slide_wrap">
-                                        <a href="#">
-                                            <img src="./images/product/best_product08.jpg" alt="">
-                                            <h2>허니데이 야생화벌꿀 (각 15g x 30포)</h2>
-                                        </a>
+                                    <div class="product_wrap">
+                                        <a href="#"><img src="./images/product/best_product08.jpg" alt=""></a>
+                                        <h2>허니데이 야생화벌꿀 (각 15g x 30포)</h2>
                                         <p>일상에서 간편하게 즐기는 고품질 야생화벌꿀</p>
                                         <p class="price">39,000원</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="pagi_bar">
+                        <!-- <div class="pagi_bar">
                             <div class="pagination pg"></div>
                             <div class="bar_bg">
                                 <span class="bar"></span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -194,23 +188,23 @@
             <div class="gift_wrap">
                 <div class="gift_title title">
                     <h1>Gift Recommendations</h1>
-                    <p>소중한 순간을 더욱 특별하게 만들어줄 감각적인 허니 선물 추천</p>
+                    <p>소중한 순간을 더욱 특별하게 만들어줄 <span>감각적인 허니 선물 추천</span></p>
                 </div>
                 <div class="option gift_option">
                     <ul class="section">
-                        <li><a href="#">가족 선물</a></li>
+                        <li class="active"><a href="#">가족 선물</a></li>
                         <li><a href="#">연인 선물</a></li>
                         <li><a href="#">친구 선물</a></li>
                         <li><a href="#">감사 선물</a></li>
                         <li><a href="#">나에게 선물</a></li>
                     </ul>
-                    <form action="#" method="get">
+                    <form action="#" method="get" class="sort">
                         <select name="sort_tabs" class="sort_tabs">
-                            <option value="">인기순</option>
-                            <option value="">추천순</option>
-                            <option value="">높은가격순</option>
-                            <option value="">낮은가격순</option>
-                            <option value="">최신순</option>
+                            <option value="popular">인기순</option>
+                            <option value="recommended">추천순</option>
+                            <option value="pricedesc">높은가격순</option>
+                            <option value="priceasc">낮은가격순</option>
+                            <option value="latest">최신순</option>
                         </select>
                     </form>
                 </div>
@@ -218,64 +212,50 @@
                     <div class="swiper gift_slide">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <a href="#">
-                                    <img src="./images/product/gift_product01.jpg" alt="">
-                                    <h1>허니드림 (520g)</h1>
-                                </a>
+                                <a href="#"><img src="./images/product/gift_product01.jpg" alt=""></a>
+                                <h1>허니드림 (520g)</h1>
                                 <p>부담 없이 감사함을 전하는 선물</p>
                                 <p class="price">55,000원</p>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#">
-                                    <img src="./images/product/gift_product02.jpg" alt="">
-                                    <h2>아카시아벌꿀 선물용 (1.4kg)</h2>
-                                </a>
+                                <a href="#"><img src="./images/product/gift_product02.jpg" alt=""></a>
+                                <h2>아카시아벌꿀 선물용 (1.4kg)</h2>
                                 <p>격식과 정성을 담은 특별한 선물</p>
                                 <p class="price">108,000원</p>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#">
-                                    <img src="./images/product/gift_product03.jpg" alt="">
-                                    <h2>야생화벌꿀 선물용 (1.4kg)</h2>
-                                </a>
+                                <a href="#"><img src="./images/product/gift_product03.jpg" alt=""></a>
+                                <h2>야생화벌꿀 선물용 (1.4kg)</h2>
                                 <p>격식과 정성을 담은 특별한 선물</p>
                                 <p class="price">86,000원</p>
                             </div>
                             <div class="swiper-slide slide4">
-                                <a href="#">
-                                    <img src="./images/product/gift_product04.jpg" alt="">
-                                    <h2>허니안 3종세트 (670g 1병, 200g x 2병)</h2>
-                                </a>
+                                <a href="#"><img src="./images/product/gift_product04.jpg" alt=""> </a>
+                                <h2>허니안 3종세트 (670g 1병, 200g x 2병)</h2>
                                 <p>소중한 분들을 위한 합리적인 선물</p>
                                 <p class="price">79,000원</p>
                             </div>
                             <div class="swiper-slide slide5">
-                                <a href="#">
-                                    <img src="./images/product/gift_product05.jpg" alt="">
-                                    <h2>허니영 세트 (300g x 2병)</h2>
-                                </a>
+                                <a href="#"><img src="./images/product/gift_product05.jpg" alt=""></a>
+                                <h2>허니영 세트 (300g x 2병)</h2>
                                 <p>실속있는 가격으로 다양한 맛을 경험</p>
                                 <p class="price">53,000원</p>
                             </div>
                             <div class="swiper-slide slide6">
-                                <a href="#">
-                                    <img src="./images/product/best_product06.jpg" alt="">
-                                    <h2>허니트리 야생화벌꿀 (670g)</h2>
-                                </a>
+                                <a href="#"><img src="./images/product/best_product06.jpg" alt=""></a>
+                                <h2>허니트리 야생화벌꿀 (670g)</h2>
                                 <p>여러 종류의 꽃에서 모인 다양한 맛</p>
                                 <p class="price">45,000원</p>
                             </div>
                             <div class="swiper-slide slide7">
-                                <a href="#">
-                                    <img src="./images/product/best_product07.jpg" alt="">
-                                    <h2>허니데이 아카시아벌꿀 (각 15g x 30포)</h2>
-                                </a>
+                                <a href="#"><img src="./images/product/best_product07.jpg" alt=""></a>
+                                <h2>허니데이 아카시아벌꿀 (각 15g x 30포)</h2>
                                 <p>일상에서 간편하게 즐기는 고품질 아카시아벌꿀</p>
                                 <p class="price">49,000원</p>
                             </div>
                         </div>
-                        <div class="swiper-button-prev prev"></div>
-                        <div class="swiper-button-next next"></div>
+                        <!-- <div class="swiper-button-prev prev"></div>
+                        <div class="swiper-button-next next"></div> -->
                     </div>
                 </div>
             </div>
@@ -287,13 +267,13 @@
                 <div class="collections disney_wrap">
                     <div class="promo_wrap">
                         <div class="promo_bnr">
-                            <a href=""><img src="./images/common/disney_logo.png" alt=""></a>
-                            <a href="#" class="button">제품 바로가기</a>
+                            <img src="./images/common/disney_logo.png" alt="디즈니">
+                            <a href="#" class="disney_link">제품 바로가기</a>
                         </div>
                         <div class="promo_txt">
                             <h1><em>디즈니와 안상규벌꿀이 만난</em></h1>
                             <h1>프레스티지 컬렉션</h1>
-                            <p>양봉하는 곰돌이 푸의 매력을 담은 허니키퍼 에디션,<br> 클래식한 매력의 미키와 푸 꿀단지,<br> 언제 어디서나 함께할 수 있는 허니스틱 라인업까지<br> 보고만 있어도 미소가 지어지는 사랑스러운 컬렉션을 지금 만나보세요!</p>
+                            <p>양봉하는 곰돌이 푸의 매력을 담은 허니키퍼 에디션,<br> 클래식한 매력의 미키와 푸 꿀단지,<br> 언제 어디서나 함께할 수 있는 허니스틱 라인업까지<br> 보고만 있어도 미소가 지어지는 <span>사랑스러운 컬렉션을 지금 만나보세요!</span></p>
                         </div>
                     </div>
                     <div class="swiper disney_product">
@@ -330,8 +310,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev prev"></div>
-                    <div class="swiper-button-next next"></div>
+                    <!-- <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div> -->
                 </div>
                 <div class="collections van_gogh_wrap">
                     <div class="promo_wrap">
@@ -339,56 +319,56 @@
                             <h1><em>반 고흐 뮤지엄 × 안성규벌꿀, </em></h1>
                             <h1>자연과 예술의 특별한 만남</h1>
                             <p>반 고흐 뮤지엄과 안성규벌꿀이 협업하여 정교한 프린팅으로 작품의 감성을 살리고, 견고한 디자인으로 소장 가치를 더한 패키지를 완성했습니다. 세계양봉대회 수상 벌꿀의 깊은 풍미까지 함께 경험해보세요.</p>
-                            <a href="#" class="button">제품 바로가기</a>
+                            <a href="#" class="van_link">제품 바로가기</a>
                         </div>
                     </div>
                     <div class="swiper van_product">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <a href="#"><img src="./images/product/van_gogh_product01.jpg" alt=""></a>
+                                <a href="#"><img src="./images/product/van_gogh_product01.jpg" alt="반고흐 컬렉션 글라스 야생화"></a>
                                 <h2>반고흐 컬렉션<br>글라스 야생화</h2>
                                 <p class="price">32,000원</p>
                             </div>
                             <div class="swiper-slide slide2">
-                                <a href="#"><img src="./images/product/van_gogh_product02.jpg" alt=""></a>
+                                <a href="#"><img src="./images/product/van_gogh_product02.jpg" alt="반고흐 컬렉션 20입 플로럴 야생화벌꿀"></a>
                                 <h2>반고흐 컬렉션 20입<br>플로럴 야생화벌꿀</h2>
                                 <p class="price">33,000원</p>
                             </div>
                             <div class="swiper-slide slide3">
-                                <a href="#"><img src="./images/product/van_gogh_product03.jpg" alt=""></a>
+                                <a href="#"><img src="./images/product/van_gogh_product03.jpg" alt="반고흐 컬렉션 8입 아카시아벌꿀"></a>
                                 <h2>반고흐 컬렉션 8입 아카시아벌꿀<br>[The Pink Orchard]</h2>
                                 <p class="price">15,000원</p>
                             </div>
                             <div class="swiper-slide slide4">
-                                <a href="#"><img src="./images/product/van_gogh_product04.jpg" alt=""></a>
+                                <a href="#"><img src="./images/product/van_gogh_product04.jpg" alt="반고흐 컬렉션 10입"></a>
                                 <h2>반고흐 컬렉션 10입<br>[Almond Blossom]</h2>
                                 <p class="price">30,000원</p>
                             </div>
                             <div class="swiper-slide slide1">
-                                <a href="#"><img src="./images/product/van_gogh_product01.jpg" alt=""></a>
+                                <a href="#"><img src="./images/product/van_gogh_product01.jpg" alt="반고흐 컬렉션 글라스 벌꿀 세트"></a>
                                 <h2>반고흐 컬렉션<br>글라스 벌꿀 세트</h2>
                                 <p class="price">35,000원</p>
                             </div>
                             <div class="swiper-slide slide1">
-                                <a href="#"><img src="./images/product/van_gogh_product01.jpg" alt=""></a>
+                                <a href="#"><img src="./images/product/van_gogh_product01.jpg" alt="반고흐 컬렉션 크리스탈 벌꿀 세트"></a>
                                 <h2>반고흐 컬렉션<br>크리스탈 벌꿀 세트</h2>
                                 <p class="price">125,000원</p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev prev"></div>
-                    <div class="swiper-button-next next"></div>
+                    <!-- <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div> -->
                 </div>
             </div>
-        </main>
-        <footer>
             <div class="inquiry">
                 <div class="inquiry_title title">
                     <h1>Corporate Gift Orders</h1>
                     <p>품격을 선물하고 싶다면, 안상규벌꿀</p>
                 </div>
-                <a href="#" class="button">기업 / 단체 문의</a>
+                <a href="#" class="inquiry_link">기업 / 단체 문의</a>
             </div>
+        </main>
+        <footer>
             <div class="info_section">
                 <h1><a href="#"><img src="./images/common/logo.png" alt="안상규벌꿀"></a></h1>
                 <address>
@@ -397,13 +377,13 @@
                         <li><a href="#">이용약관</a></li>
                         <li><a href="#">개인정보처리방침</a></li>
                     </ul>
-                    <span>COMPANY:  ㈜안상규벌꿀  CEO : 안상규<br>Address : 07229 안상규벌꿀 서울특별시 영등포구 국회대로 675 (영등포동7가)<br>사업자등록번호 : 107-87-92888  호스팅제공자 : 카페24㈜ 통신판매신고번호 : 2014-서울영등포-0461</span>
+                    <span>COMPANY:  ㈜안상규벌꿀  CEO : 안상규<br><span>Address : 07229</span> 안상규벌꿀 서울특별시 영등포구 국회대로 675 (영등포동7가)<br><span>사업자등록번호 : 107-87-92888</span>  호스팅제공자 : 카페24㈜ 통신판매신고번호 : 2014-서울영등포-0461</span>
                     <span>Copyright © ㈜안상규벌꿀. All Rights Reserved. Hosting by Cafe24 Corp.</span>
                 </address>
                 <div class="info">
                     <ul class="sns">
-                        <li><a href="#"><img src="./images/common/icon_instagram.png" alt=""></a></li>
-                        <li><a href="#"><img src="./images/common/icon_youtube.png" alt=""></a></li>
+                        <li><a href="#"><img src="./images/common/icon_instagram.png" alt="인스타그램 링크"></a></li>
+                        <li><a href="#"><img src="./images/common/icon_youtube.png" alt="유튜브 링크"></a></li>
                     </ul>
                     <span>고객센터<br>02-3667-9898<br>E-mail : juae_an@beeman.co.kr</span>
                     <span>[온라인 상담 운영시간]<br>월~금 09:30~18:00 토 10:30~18:00</span>

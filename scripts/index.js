@@ -1,0 +1,23 @@
+const bestItem = document.querySelector('.best_slide');
+const giftItem = document.querySelector('.gift_slide');
+const disneyItem = document.querySelector('.disney_product');
+const vanItem = document.querySelector('.van_product');
+console.log(bestItem,giftItem);
+
+const bestSwiper = new Swiper(bestItem,{
+    slidesPerView:2,
+    loop:true,
+})
+const giftSwiper = new Swiper(giftItem,{
+    slidesPerView:5,
+    loop:true,
+    centeredSlides:true,
+})
+const disneySwiper = new Swiper(disneyItem,{
+    slidesPerView:4,
+    loop:true,
+})
+const vanSwiper = new Swiper(vanItem,{
+    slidesPerView:4,
+    loop:true,
+})
