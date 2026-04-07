@@ -6,10 +6,12 @@ console.log(bestItem,giftItem);
 
 const bestSwiper = new Swiper(bestItem,{
     slidesPerView:2,
+    spaceBetween:35,
     loop:true,
 })
 const giftSwiper = new Swiper(giftItem,{
     slidesPerView:5,
+    spaceBetween:35,
     loop:true,
     centeredSlides:true,
 })

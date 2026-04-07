@@ -35,12 +35,12 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom:0;
     width: 0;
-    height: 1px;
-    background-color: #fff;
+    height: 3px;
+    background-color:#856363; transform: scaleX(0); transition: transform 0.3s ease;
 }
-#wrap header nav #gnb_main li a:hover::after {width: 100%;}
+#wrap header nav #gnb_main li a:hover::after {width: 100%; transform: scaleX(1);}
 #wrap header nav #gnb_promotion {display:flex;}
 #wrap header nav #gnb_promotion li {margin-right:25px;}
 #wrap header nav #gnb_promotion li a {
@@ -55,12 +55,12 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom:0;
     width: 0;
-    height: 1px;
-    background-color: #fff;
+    height: 3px;
+    background-color:#856363; transform: scaleX(0); transition: transform 0.3s ease;
 }
-#wrap header nav #gnb_promotion li a:hover::after {width:100%;}
+#wrap header nav #gnb_promotion li a:hover::after {width:100%; transform: scaleX(1);}
 #wrap header .header_left {display: flex; flex-flow:row nowrap; align-items:center; margin-left:142px;}
 #wrap header .header_left .header_info {display:flex; gap:15px; }
 #wrap header .header_left .header_info li {text-align: center; position: relative;}
@@ -76,12 +76,12 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom:0;
     width: 0;
-    height: 1px;
-    background-color: #fff;
+    height: 3px;
+    background-color: #856363; transform: scaleX(0); transition: transform 0.3s ease;
 }
-#wrap header .header_left .header_info > li > a:hover::after {width:100%;}
+#wrap header .header_left .header_info > li > a:hover::after {width:100%; transform: scaleX(1);}
 #wrap header .header_left .header_info li .info_depth2 {
     position:absolute; top: 100%; left: 0;
     background-color: rgba(48, 41, 38, 0.6); width:149px;
@@ -113,7 +113,7 @@
 #wrap main .intro h1 {font-size: 1.5rem; font-weight:500;}
 #wrap main .intro p {font-size: 1.13rem; background-color: chocolate; text-align:left;}
 /* ======================================================main-best_wrap */
-#wrap main .best_wrap {}
+#wrap main .best_wrap {max-width:1440px; margin:0 auto; padding:120px 0;}
 #wrap main .best_wrap .best_title {}
 #wrap main .best_wrap .best_title h1 {}
 #wrap main .best_wrap .best_title h1 p{}
@@ -126,27 +126,35 @@
 #wrap main .best_wrap .option .sort {}
 #wrap main .best_wrap .option .sort .sort_tabs {}
 #wrap main .best_wrap .option .sort .sort_tabs .option {}
-#wrap main .best_wrap .best_product_wrap {display:flex;}
+#wrap main .best_wrap .best_product_wrap {display:flex; gap:25px;}
 #wrap main .best_wrap .best_product_wrap .product_bnr {width:50%;}
 #wrap main .best_wrap .best_product_wrap .product_bnr img {width:100%;}
 #wrap main .best_wrap .best_product_wrap .product {background-color: rgb(229, 255, 136); width:50%;}
 #wrap main .best_wrap .best_product_wrap .product .swiper {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide {}
-#wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap {width:330px;}
+#wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap a {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap a img {width:100%;}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap h2 {margin-top:10px;}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap p {}
-#wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap .price {}
+#wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap .price {margin-bottom:25px;}
 /* ======================================================main-mid_bnr */
 #wrap main .mid_bnr {background-image:url(../images/common/mid_bnr_bg.jpg); background-position:center; height:290px;}
 #wrap main .mid_bnr h1 {}
 #wrap main .mid_bnr p {}
 /* ======================================================main-gift_wrap */
-#wrap main .gift_wrap {}
+#wrap main .gift_wrap {padding:120px 0;}
+#wrap main .gift_wrap .gift_title {}
+#wrap main .gift_wrap .gift_title h1 {}
+#wrap main .gift_wrap .gift_title p {}
+#wrap main .gift_wrap .gift_title p span {}
 #wrap main .gift_wrap .option {justify-content:center;  background-color: rgb(117, 255, 163);}
 #wrap main .gift_wrap .option .section {}
+#wrap main .gift_wrap .option .section .active {}
+#wrap main .gift_wrap .option .section .active a {}
+#wrap main .gift_wrap .option .section li {}
+#wrap main .gift_wrap .option .section li a {}
 #wrap main .gift_wrap .option .sort {}
 #wrap main .gift_wrap .option .sort .sort_tabs {background-color: aqua;}
 #wrap main .gift_wrap .option .sort .sort_tabs .option {}
@@ -156,15 +164,19 @@
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide a {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
+#wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide h1 {margin-top:10px;}
+#wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide p {}
+#wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide .price {}
 /* ======================================================main-collections_wrap */
+#wrap main .collections_wrap {max-width:1440px; margin:0 auto; padding-bottom:120px;}
 /* ======================================================main-collections_wrap disney */
 #wrap main .collections_wrap .disney_wrap {}
-#wrap main .collections_wrap .disney_wrap .promo_wrap {display:flex; justify-content:center; align-items:center;}
+#wrap main .collections_wrap .disney_wrap .promo_wrap {display:flex; justify-content:center; align-items:center; gap:20px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr {background-image:url(../images/common/disney_bnr.jpg); text-align: center;}
-#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr a {}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr a {width:800px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr a img {width:100%;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr .disney_link {background-color: #fff; font-size:0.75rem; padding:10px 10px;}
-#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt {}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt {padding:50px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 {}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 em {}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt p {}
