@@ -140,14 +140,16 @@
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap p {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap .price {}
 /* ======================================================main-mid_bnr */
-#wrap main .mid_bnr {background-color: rgb(96, 255, 255);}
+#wrap main .mid_bnr {background-image:url(../images/common/mid_bnr_bg.jpg); background-position:center; height:290px;}
+#wrap main .mid_bnr h1 {}
+#wrap main .mid_bnr p {}
 /* ======================================================main-gift_wrap */
 #wrap main .gift_wrap {}
 #wrap main .gift_wrap .option {justify-content:center;  background-color: rgb(117, 255, 163);}
 #wrap main .gift_wrap .option .section {}
-#wrap main .gift_wrap .option form {}
-#wrap main .gift_wrap .option form .sort_tabs {background-color: aqua;}
-#wrap main .gift_wrap .option form .sort_tabs .option {}
+#wrap main .gift_wrap .option .sort {}
+#wrap main .gift_wrap .option .sort .sort_tabs {background-color: aqua;}
+#wrap main .gift_wrap .option .sort .sort_tabs .option {}
 #wrap main .gift_wrap .gift_product {background-color: rgb(176, 255, 96);}
 #wrap main .gift_wrap .gift_product .swiper {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper {}
