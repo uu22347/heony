@@ -17,9 +17,11 @@ const giftSwiper = new Swiper(giftItem,{
 })
 const disneySwiper = new Swiper(disneyItem,{
     slidesPerView:4,
+    spaceBetween:30,
     loop:true,
 })
 const vanSwiper = new Swiper(vanItem,{
     slidesPerView:4,
+    spaceBetween:30,
     loop:true,
 })
