@@ -109,9 +109,16 @@
 #wrap main .hero_wrap .swiper .swiper-wrapper .swiper-slide {height:950px;}
 #wrap main .hero_wrap .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
 /* ======================================================main-intro */
-#wrap main .intro {display: flex; justify-content: center;}
-#wrap main .intro h1 {font-size: 1.5rem; font-weight:500;}
-#wrap main .intro p {font-size: 1.13rem; background-color: chocolate; text-align:left;}
+#wrap main .intro {display: flex; justify-content: center; align-items:center;}
+#wrap main .intro h1 {font-size: 1.5rem; font-weight:500; position: relative; margin-right: 20px; padding-right: 20px;}
+#wrap main .intro h1::after {  
+    content: "";
+    position: absolute;
+    right: 0; top: 50%; 
+    transform: translateY(-50%);
+    width: 1px; height: 16px; background-color: #000;
+}
+#wrap main .intro p {font-size: 1.13rem; text-align:left; line-height:1.5;} 
 /* ======================================================main-best_wrap */
 #wrap main .best_wrap {max-width:1440px; margin:0 auto; padding:120px 0;}
 #wrap main .best_wrap .best_title {}
@@ -156,7 +163,7 @@
 #wrap main .gift_wrap .option .gift_menu li {}
 #wrap main .gift_wrap .option .gift_menu li a {}
 #wrap main .gift_wrap .option .sort {}
-#wrap main .gift_wrap .option .sort .sort_tabs {}
+#wrap main .gift_wrap .option .sort .sort_tabs {background-color:aqua;}
 #wrap main .gift_wrap .option .sort .sort_tabs .option {}
 #wrap main .gift_wrap .gift_product {}
 #wrap main .gift_wrap .gift_product .swiper {}
@@ -164,7 +171,7 @@
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide a {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
-#wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide h1 {margin-top:10px;}
+#wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide h2 {margin-top:10px;}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide p {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide .price {}
 /* ======================================================main-collections_wrap */
@@ -178,8 +185,10 @@
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr {
     background-image:url(../images/common/disney_bnr.jpg); 
     background-position:top; background-size:100%;
-    width:800px; height:456px;}
-#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr img {width:300px; background-color: aqua;}
+    width:800px; height:456px; 
+    display:block; text-align:center; border-radius:30px;
+}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr img {width:100%; background-color: aqua;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr .disney_link {background-color: #fff; font-size:0.75rem; padding:10px 10px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt {padding:50px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 {}
@@ -190,7 +199,7 @@
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide a {}
-#wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide a img {}
+#wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide a img {width:100%; border-radius:30px;}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide h2 {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide .price {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide1 {}
@@ -201,7 +210,7 @@
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide6 {}
 /* ======================================================main-collections_wrap van */
 #wrap main .collections_wrap .van_gogh_wrap {}
-#wrap main .collections_wrap .van_gogh_wrap .promo_wrap {background-image:url(../images/common/van_gogh_bnr.jpg); height:456px; margin:150px 0 30px 0;}
+#wrap main .collections_wrap .van_gogh_wrap .promo_wrap {background-image:url(../images/common/van_gogh_bnr.jpg); height:456px; margin:150px 0 30px 0; border-radius:30px;}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt * {color:#fff;}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt h1 {}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt h1 span {}
@@ -213,7 +222,7 @@
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide a {}
-#wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide a img {}
+#wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide a img {width:100%; border-radius:30px;}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide h2 {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide .price {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide1 {}
