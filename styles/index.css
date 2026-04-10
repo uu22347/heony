@@ -85,7 +85,7 @@
 #wrap header .header_left .header_info li .info_depth2 {
     position:absolute; top: 100%; left: 50%; transform:translateX(-50%);
     background-color: rgba(48, 41, 38, 0.6); width:149px;
-    padding:20px 20px;
+    padding:20px 20px; display:none;
 }
 #wrap header .header_left .header_info li .info_depth2 li {
     margin-bottom:15px;
@@ -156,14 +156,27 @@
 #wrap main .gift_wrap .gift_title h1 {}
 #wrap main .gift_wrap .gift_title p {}
 #wrap main .gift_wrap .gift_title p span {}
-#wrap main .gift_wrap .option {justify-content:center;}
-#wrap main .gift_wrap .option .gift_menu {background-color: aquamarine;}
+#wrap main .gift_wrap .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto; margin-bottom:30px;
+}
+#wrap main .gift_wrap .option .gift_menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
 #wrap main .gift_wrap .option .gift_menu .active {}
 #wrap main .gift_wrap .option .gift_menu .active a {}
 #wrap main .gift_wrap .option .gift_menu li {}
 #wrap main .gift_wrap .option .gift_menu li a {}
-#wrap main .gift_wrap .option .sort {}
-#wrap main .gift_wrap .option .sort .sort_tabs {background-color:aqua;}
+#wrap main .gift_wrap .option .sort {
+    margin-left: auto;
+}
+#wrap main .gift_wrap .option .sort .sort_tabs {}
 #wrap main .gift_wrap .option .sort .sort_tabs .option {}
 #wrap main .gift_wrap .gift_product {}
 #wrap main .gift_wrap .gift_product .swiper {}
@@ -174,6 +187,14 @@
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide h2 {margin-top:10px;}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide p {}
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide .price {}
+#wrap main .gift_wrap .gift_product .swiper .prev,
+#wrap main .gift_wrap .gift_product .swiper .next {
+    background-image:url(../images/common/icon_arrow.png);  background-size:contain; width:55px; height:55px; 
+}
+#wrap main .gift_wrap .gift_product .swiper .prev {}
+#wrap main .gift_wrap .gift_product .swiper .next {transform:scaleX(-1);}
+#wrap main .gift_wrap .gift_product .swiper .prev svg,
+#wrap main .gift_wrap .gift_product .swiper .next svg {display:none;}
 /* ======================================================main-collections_wrap */
 #wrap main .collections_wrap {max-width:1440px; margin:0 auto; padding-bottom:120px;}
 #wrap main .collections_wrap .collections_title {}
@@ -186,10 +207,23 @@
     background-image:url(../images/common/disney_bnr.jpg); 
     background-position:top; background-size:100%;
     width:800px; height:456px; 
-    display:block; text-align:center; border-radius:30px;
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:center; 
+    border-radius:30px;
+    position: relative;
+    overflow: hidden;
 }
-#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr img {width:100%; background-color: aqua;}
-#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr .disney_link {background-color: #fff; font-size:0.75rem; padding:10px 10px;}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15); 
+    border-radius: 30px; z-index: 0;
+}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr img {width:320px; display:block;  z-index: 1;}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr .disney_link {background-color: #fff; font-size:0.75rem; padding:10px 12px;  z-index: 1;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt {padding:50px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 {}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 span {}
@@ -210,13 +244,32 @@
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide6 {}
 /* ======================================================main-collections_wrap van */
 #wrap main .collections_wrap .van_gogh_wrap {}
-#wrap main .collections_wrap .van_gogh_wrap .promo_wrap {background-image:url(../images/common/van_gogh_bnr.jpg); height:456px; margin:150px 0 30px 0; border-radius:30px;}
-#wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt * {color:#fff;}
+#wrap main .collections_wrap .van_gogh_wrap .promo_wrap {
+    background-image:url(../images/common/van_gogh_bnr.jpg); 
+    height:456px; margin:150px 0 30px 0; 
+    border-radius:30px;  padding: 100px 95px;
+    position: relative;
+    overflow: hidden;
+}
+#wrap main .collections_wrap .van_gogh_wrap .promo_wrap::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15); 
+    border-radius: 30px; z-index: 0;
+}
+#wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt * {color:#fff; position: relative; z-index: 1;}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt h1 {}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt h1 span {}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt p {margin-bottom:35px;}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt p span {}
-#wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt .van_link {background-color: #000; padding:10px 10px;}
+#wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt .van_link {
+    padding:10px 10px; font-size:0.75rem; padding:10px 12px;
+    background-color:#fff; color:#000;
+}
 #wrap main .collections_wrap .van_gogh_wrap .van_product {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide {}
