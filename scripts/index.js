@@ -8,10 +8,9 @@ console.log(bestItem,giftItem,disneyItem,vanItem);
 const bestSwiper = new Swiper(bestItem,{
     slidesPerView: 2,
     spaceBetween: 35,
-    loop: false,
-    pagination: {
-        el: bestItem.querySelector('.swiper-pagination'),
-        type: 'progressbar',
+    loop: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
     },
 });
 const giftSwiper = new Swiper(giftItem,{
@@ -25,12 +24,20 @@ const giftSwiper = new Swiper(giftItem,{
     }
 })
 const disneySwiper = new Swiper(disneyItem,{
-    slidesPerView:4.3,
+    slidesPerView:4,
+    spaceBetween:20,
     loop:true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
 })
 const vanSwiper = new Swiper(vanItem,{
-    slidesPerView:4.3,
+    slidesPerView:4,
+    spaceBetween:20,
     loop:true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
 })
 
 //==============================헤더 
@@ -48,3 +55,6 @@ for(let i of gnb){
         i.children[1].style.display = 'none';
     })
 }
+
+//==============================인기순 탭
+

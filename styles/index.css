@@ -1,4 +1,4 @@
-#wrap {min-width:1200px;}
+#wrap {min-width:1440px;}
 /* ======================================================header */
 #wrap header {
     width:100%; background-color:#302926; 
@@ -143,7 +143,7 @@
 #wrap main .best_wrap .best_product_wrap {display:flex; gap:25px;}
 #wrap main .best_wrap .best_product_wrap .product_bnr {width:50%;}
 #wrap main .best_wrap .best_product_wrap .product_bnr img {width:100%;}
-#wrap main .best_wrap .best_product_wrap .product { width:50%;}
+#wrap main .best_wrap .best_product_wrap .product { width:50%; position:relative;}
 #wrap main .best_wrap .best_product_wrap .product .swiper {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide {}
@@ -153,9 +153,8 @@
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap h2 {margin-top:10px;}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap p {}
 #wrap main .best_wrap .best_product_wrap .product .swiper .swiper-wrapper .swiper-slide .product_wrap .price {margin-bottom:25px;}
-#wrap main .best_wrap .best_product_wrap .product .swiper .swiper-pagination {
-    height: 4px;
-    background: #333;
+#wrap main .best_wrap .best_product_wrap .product .scroll_best {
+    height: 1px;
 }
 /* ======================================================main-mid_bnr */
 #wrap main .mid_bnr {background-image:url(../images/common/mid_bnr_bg.jpg); background-position:center; height:290px;}
@@ -205,10 +204,10 @@
 #wrap main .gift_wrap .gift_product .swiper .swiper-wrapper .swiper-slide .price {}
 #wrap main .gift_wrap .gift_product .swiper .prev,
 #wrap main .gift_wrap .gift_product .swiper .next {
-    background-image:url(../images/common/icon_arrow.png);  background-size:contain; width:55px; height:55px; 
+    background-image:url(../images/common/icon_arrow.png);  background-size:contain; width:55px; height:55px; top:170px;
 }
-#wrap main .gift_wrap .gift_product .swiper .prev {}
-#wrap main .gift_wrap .gift_product .swiper .next {transform:scaleX(-1);}
+#wrap main .gift_wrap .gift_product .swiper .prev {left:240px;}
+#wrap main .gift_wrap .gift_product .swiper .next {transform:scaleX(-1); right:240px;}
 #wrap main .gift_wrap .gift_product .swiper .prev svg,
 #wrap main .gift_wrap .gift_product .swiper .next svg {display:none;}
 /* ======================================================main-collections_wrap */
@@ -217,12 +216,12 @@
 #wrap main .collections_wrap .collections_title h1 {}
 #wrap main .collections_wrap .collections_title p {}
 /* ======================================================main-collections_wrap disney */
-#wrap main .collections_wrap .disney_wrap {}
+#wrap main .collections_wrap .disney_wrap {position: relative;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap {display:flex; justify-content:center; align-items:center; gap:20px; margin-bottom:35px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr {
     background-image:url(../images/common/disney_bnr.jpg); 
     background-position:top; background-size:100%;
-    width:830px; height:456px; 
+    width:840px; height:456px; 
     display:flex; flex-flow:column nowrap; justify-content:center; align-items:center; 
     border-radius:30px;
     position: relative;
@@ -247,7 +246,6 @@
 #wrap main .collections_wrap .disney_wrap .disney_product {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide {}
-#wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide a {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide a img {width:100%; border-radius:30px;}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .swiper-slide h2 {}
@@ -258,6 +256,7 @@
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide4 {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide5 {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide6 {}
+#wrap main .collections_wrap .disney_wrap .disney_product .scroll_disney {height: 1px;}
 /* ======================================================main-collections_wrap van */
 #wrap main .collections_wrap .van_gogh_wrap {}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap {
@@ -300,6 +299,7 @@
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide4 {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide5 {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide6 {}
+#wrap main .collections_wrap .van_gogh_wrap .van_product .scroll_van {height: 1px;}
 /* ======================================================main-inquiry */
 #wrap main .inquiry {
     background-image: url(../images/common/inquiry_bg.jpg);
