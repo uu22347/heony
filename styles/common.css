@@ -23,7 +23,7 @@
 .promo_wrap .promo_txt p {font-size:1.13rem; line-height:1.7; margin-top:40px; }
 /* ================================================콜렉션 상품 목록*/
 #wrap main .collections_wrap .collections {}
-#wrap main .collections_wrap .collections .swiper {background-color: rgb(96, 255, 255);}
+#wrap main .collections_wrap .collections .swiper {}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper {display: flex; gap:30px;}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .collections_wrap .collections .swiper .swiper-wrapper .swiper-slide a {}
