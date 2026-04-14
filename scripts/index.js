@@ -28,7 +28,7 @@ const disneySwiper = new Swiper(disneyItem,{
     spaceBetween:20,
     loop:true,
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".scroll_disney",
     },
 })
 const vanSwiper = new Swiper(vanItem,{
@@ -36,7 +36,7 @@ const vanSwiper = new Swiper(vanItem,{
     spaceBetween:20,
     loop:true,
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".scroll_van",
     },
 })
 

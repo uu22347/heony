@@ -4,7 +4,7 @@
     width:100%; background-color:#302926; 
     display:flex; padding:15px 0; 
     justify-content: center; align-items: center;
-    position: fixed; z-index:999; height: 72px;
+    position: fixed; z-index:999; height: 72px; min-width:1440px;
 }
 #wrap header #t_nav_open {display:none;}
 #wrap header #t_nav_open img {width:100%;}
@@ -216,7 +216,7 @@
 #wrap main .collections_wrap .collections_title h1 {}
 #wrap main .collections_wrap .collections_title p {}
 /* ======================================================main-collections_wrap disney */
-#wrap main .collections_wrap .disney_wrap {position: relative;}
+#wrap main .collections_wrap .disney_wrap {}
 #wrap main .collections_wrap .disney_wrap .promo_wrap {display:flex; justify-content:center; align-items:center; gap:20px; margin-bottom:35px;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr {
     background-image:url(../images/common/disney_bnr.jpg); 
@@ -256,7 +256,8 @@
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide4 {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide5 {}
 #wrap main .collections_wrap .disney_wrap .disney_product .swiper-wrapper .slide6 {}
-#wrap main .collections_wrap .disney_wrap .disney_product .scroll_disney {height: 1px;}
+#wrap main .collections_wrap .disney_wrap .scroll_bar {position: relative;}
+#wrap main .collections_wrap .disney_wrap .scroll_bar .scroll_disney {height: 1px; bottom:-35px;}
 /* ======================================================main-collections_wrap van */
 #wrap main .collections_wrap .van_gogh_wrap {}
 #wrap main .collections_wrap .van_gogh_wrap .promo_wrap {
@@ -299,7 +300,8 @@
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide4 {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide5 {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .slide6 {}
-#wrap main .collections_wrap .van_gogh_wrap .van_product .scroll_van {height: 1px;}
+#wrap main .collections_wrap .van_gogh_wrap .scroll_bar {position: relative;}
+#wrap main .collections_wrap .van_gogh_wrap .scroll_bar .scroll_van {height: 1px; bottom:-35px;}
 /* ======================================================main-inquiry */
 #wrap main .inquiry {
     background-image: url(../images/common/inquiry_bg.jpg);
