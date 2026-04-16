@@ -1,9 +1,9 @@
 /* ================================================타이틀 공통*/
-.title {text-align: center; margin-top:120px; padding-bottom:50px;}
+.title {text-align: center; padding-bottom:50px;}
 .title h1 {
-    font-size: 2.25rem; font-weight:400; 
-    margin-bottom:10px;}
-    .title h1 p {font-size:1.13rem;}
+    font-size: 2.25rem; font-weight:500; 
+    margin-bottom:18px;}
+.title p {font-size:1.13rem;}
 /* ================================================옵션 공통*/
 .option {display:flex; margin-bottom:30px;}
 .option .menu {display:flex; gap:30px; align-items: center;}
@@ -12,15 +12,16 @@
 .option .menu li {}
 .option .menu li a {color:#BABABA;}
 .option .sort {}
-.option .sort .sort_tabs {border: #BABABA solid 1px; padding:5px 10px;}
+.option .sort .sort_tabs {border: #BABABA solid 1px;}
 .option .sort .sort_tabs .option {}
 /* ================================================상품 소개, 가격 공통*/
-.swiper .swiper-wrapper .swiper-slide p {font-size:0.75rem; color:#828282; margin:5px 0;}
+.swiper .swiper-wrapper .swiper-slide p {font-size:0.75rem; color:#828282; margin:7px 0;}
 .swiper .swiper-wrapper .swiper-slide .price {font-size:0.94rem; color:#000;}
 /* ================================================콜렉션 상품 소개 텍스트(제목 내용)*/
 .promo_wrap .promo_txt h1 {font-size:1.5rem; line-height:1.4;}
 .promo_wrap .promo_txt h1 span {font-size:1.75rem; font-weight:600; display: block; line-height:1.4;}
-.promo_wrap .promo_txt p {font-size:1.13rem; line-height:1.7; margin-top:40px; }
+.promo_wrap .promo_txt p {font-size:1.13rem; line-height:1.7; margin-top:40px; font-weight:300;}
+.promo_wrap .promo_txt span {font-weight:300;}
 /* ================================================콜렉션 상품 목록*/
 #wrap main .collections_wrap .collections {}
 #wrap main .collections_wrap .collections .swiper {}
