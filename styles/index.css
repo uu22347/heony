@@ -11,10 +11,10 @@
 #wrap header h1 {width:74px;}
 #wrap header h1 a {}
 #wrap header h1 a img {width:100%;}
-#wrap header nav {display:flex; margin-left:40px;}
+#wrap header nav {display:flex; margin-left:45px;}
 #wrap header nav #gnb_main {
     display:flex;
-    position: relative; padding-right:25px;}
+    position: relative; padding-right:30px;}
 #wrap header nav #gnb_main::before {
     content: "";
     position: absolute;
@@ -24,7 +24,7 @@
     width: 1px; height:10px;
     background-color: #fff; margin:0 35px;
 }
-#wrap header nav #gnb_main li {margin-right:25px;}
+#wrap header nav #gnb_main li {margin-right:30px;}
 #wrap header nav #gnb_main li a {
     display: block;  height: 100%; line-height:72px;
     color:#fff; font-size:0.81rem;
@@ -63,8 +63,8 @@
     background-color:#856363; transform: scaleX(0); transition: transform 0.3s ease;
 }
 #wrap header nav #gnb_promotion li a:hover::after {width:100%; transform: scaleX(1);}
-#wrap header .header_right {display: flex; flex-flow:row nowrap; align-items:center; margin-left:142px;}
-#wrap header .header_right .header_info {display:flex; gap:15px; }
+#wrap header .header_right {display: flex; flex-flow:row nowrap; align-items:center; margin-left:140px;}
+#wrap header .header_right .header_info {display:flex; gap:20px; }
 #wrap header .header_right .header_info li {text-align: center; position: relative;}
 #wrap header .header_right .header_info > li > a {
     display: block;  height: 100%; line-height:72px;
@@ -106,10 +106,13 @@
 /* ======================================================main */
 /* ======================================================main-hero_wrap */
 #wrap main .hero_wrap {}
-#wrap main .hero_wrap .swiper {}
-#wrap main .hero_wrap .swiper .swiper-wrapper {}
-#wrap main .hero_wrap .swiper .swiper-wrapper .swiper-slide {height:950px;}
-#wrap main .hero_wrap .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
+#wrap main .hero_wrap .hero_bnr {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {height:950px;}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a {}
+#wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a img {width:100%;}
+#wrap main .hero_wrap .hero_bnr .scroll_main {height:1px;  bottom:60px; width: 50%; left:25%; background-color:#fff;}
+#wrap main .hero_wrap .hero_bnr .scroll_main .swiper-scrollbar-drag {background-color:#302926; }
 /* ======================================================main-intro */
 #wrap main .intro {display: flex; justify-content: center; align-items:center; margin:50px 0;}
 #wrap main .intro h1 {font-size: 1.5rem; font-weight:500; position: relative; margin-right: 20px; padding-right: 20px;}
@@ -239,6 +242,7 @@
 }
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr img {width:320px; display:block;  z-index: 1;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr .disney_link {background-color: #fff; font-size:0.75rem; padding:10px 12px;  z-index: 1;}
+#wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr .disney_link:hover {background-color: #E3E3E3;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt {padding:50px;;}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 {}
 #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_txt h1 span {}
@@ -286,6 +290,7 @@
     padding:10px 10px; font-size:0.75rem; padding:10px 12px;
     background-color:#fff; color:#000;
 }
+#wrap main .collections_wrap .van_gogh_wrap .promo_wrap .promo_txt .van_link:hover {background-color: #E3E3E3;}
 #wrap main .collections_wrap .van_gogh_wrap .van_product {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper {}
 #wrap main .collections_wrap .van_gogh_wrap .van_product .swiper-wrapper .swiper-slide {}
@@ -318,6 +323,7 @@
     padding:10px 15px;
     background-color:#000; color:#fff; font-size: 0.75rem;
 }
+#wrap main .inquiry .inquiry_link:hover {background-color:#302926;}
 /* ======================================================footer */
 #wrap footer {}
 #wrap footer .info_section {

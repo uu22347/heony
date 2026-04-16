@@ -1,16 +1,27 @@
 //=================================slide
+const mainBnr = document.querySelector('.hero_bnr');
 const bestItem = document.querySelector('.best_slide');
 const giftItem = document.querySelector('.gift_slide');
 const disneyItem = document.querySelector('.disney_product');
 const vanItem = document.querySelector('.van_product');
-console.log(bestItem,giftItem,disneyItem,vanItem);
+console.log(mainBnr,bestItem,giftItem,disneyItem,vanItem);
 
+const mainSwiper = new Swiper(mainBnr,{
+    spaceBetween: 35,
+    loop: true,
+    autoplay: {
+    delay:4000},
+    speed: 800,
+    scrollbar: {
+        el: ".scroll_main",
+    },
+});
 const bestSwiper = new Swiper(bestItem,{
     slidesPerView: 2,
     spaceBetween: 35,
     loop: true,
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".scroll_best",
     },
 });
 const giftSwiper = new Swiper(giftItem,{
