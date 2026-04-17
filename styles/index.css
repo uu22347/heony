@@ -106,13 +106,20 @@
 /* ======================================================main */
 /* ======================================================main-hero_wrap */
 #wrap main .hero_wrap {}
-#wrap main .hero_wrap .hero_bnr {}
+#wrap main .hero_wrap .hero_bnr {position:relative;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper {}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {height:950px;}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a {}
 #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide a img {width:100%;}
-#wrap main .hero_wrap .hero_bnr .scroll_main {height:1px;  bottom:60px; width: 50%; left:25%; background-color:#fff;}
-#wrap main .hero_wrap .hero_bnr .scroll_main .swiper-scrollbar-drag {background-color:#302926; }
+#wrap main .hero_wrap .hero_bnr .prev,
+#wrap main .hero_wrap .hero_bnr .next {  top: auto !important;
+    bottom:400px !important;
+    transform: none !important;
+}
+#wrap main .hero_wrap .hero_bnr .prev {left:80px;}
+#wrap main .hero_wrap .hero_bnr .next {right:80px;}
+#wrap main .hero_wrap .hero_bnr .prev svg,
+#wrap main .hero_wrap .hero_bnr .next svg {color: #fff;}
 /* ======================================================main-intro */
 #wrap main .intro {display: flex; justify-content: center; align-items:center; margin:50px 0;}
 #wrap main .intro h1 {font-size: 1.5rem; font-weight:500; position: relative; margin-right: 20px; padding-right: 20px;}

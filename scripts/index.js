@@ -12,9 +12,10 @@ const mainSwiper = new Swiper(mainBnr,{
     autoplay: {
     delay:4000},
     speed: 800,
-    scrollbar: {
-        el: ".scroll_main",
-    },
+    navigation:{
+        nextEl:'.hero_bnr .next',
+        prevEl:'.hero_bnr .prev',
+    }
 });
 const bestSwiper = new Swiper(bestItem,{
     slidesPerView: 2,
