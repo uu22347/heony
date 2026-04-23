@@ -1,3 +1,5 @@
+**"This is a portfolio project for educational purposes."**
+* 이것은 교육 목적의 포트폴리오 프로젝트입니다.
 # 안상규벌꿀
 ## 작업기록
 * 2026/03/27 html 태그(일부) 작성 완료
