@@ -33,6 +33,10 @@ const bestSwiper = new Swiper(bestItem,{
     scrollbar: {
         el: ".scroll_best",
     },
+    breakpoints: {
+    393: {slidesPerView: 3},
+    1024: {slidesPerView: 2}
+}
 });
 const giftSwiper = new Swiper(giftItem,{
     slidesPerView:5,

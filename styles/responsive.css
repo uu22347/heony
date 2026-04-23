@@ -1,5 +1,39 @@
 
-@media screen and (min-width:1024px) {
-    
+@media screen and (max-width:1024px) {
+    /* ======================================================header */
+    #wrap header {
+    height:65px;
+    justify-content: space-between;
+    padding: 0 80px;
+    }   
+    #wrap header .header_left #t_nav_open {display:block; padding-right:20px;}
+    #wrap header nav {display:none;}
+    /* ======================================================main */
+    /* ======================================================main-hero_wrap */
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {}
+    /* ======================================================main-intro */
+    #wrap main .intro {flex-flow:column; margin:30px 0;}
+    #wrap main .intro h1 {margin-right:0; padding-right:0;}
+    #wrap main .intro h1::after {content: none;}
+    #wrap main .intro p {font-size:1rem; text-align:center;} 
+    /* ======================================================main-best_wrap */
+    #wrap main .best_wrap {margin:100px auto;}
+    #wrap main .best_wrap .best_title {}
+    #wrap main .best_wrap .best_title h1 {font-size:2.13rem;}
+    #wrap main .best_wrap .best_title p{font-size:0.94rem;}
+    #wrap main .best_wrap .option {justify-content:space-between; margin:auto 80px; padding-bottom:10px;}
+    #wrap main .best_wrap .best_product_wrap .product_bnr {display:none;}
+    #wrap main .best_wrap .best_product_wrap .product { width:100%;}
+    /* ======================================================main-mid_bnr */
+    #wrap main .mid_bnr {height:240px;}
+    #wrap main .mid_bnr p {font-size:1rem;}
+    #wrap main .mid_bnr h1 {font-size:1.13rem;}
+    #wrap main .mid_bnr a {padding:3px 10px; font-size:0.63rem;}
+    /* ======================================================main-gift_wrap */
+    /* ======================================================main-collections_wrap */
+    /* ======================================================main-collections_wrap disney */
+    /* ======================================================main-collections_wrap van */
+    /* ======================================================main-inquiry */
+    /* ======================================================footer */
 }
-@media screen and (min-width:393px) {}
+@media screen and (max-width:393px) {}
