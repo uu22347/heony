@@ -9,6 +9,9 @@
     #wrap header .header_left #t_nav_open {display:block; padding-right:20px;}
     #wrap header nav {display:none;}
     /* ======================================================main */
+    /* ======================================================main  타이틀 공통*/
+    .title h1 {font-size:2.13rem;}
+    .title p {font-size:0.94rem;}
     /* ======================================================main-hero_wrap */
     #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {}
     /* ======================================================main-intro */
@@ -18,9 +21,6 @@
     #wrap main .intro p {font-size:1rem; text-align:center;} 
     /* ======================================================main-best_wrap */
     #wrap main .best_wrap {margin:100px auto;}
-    #wrap main .best_wrap .best_title {}
-    #wrap main .best_wrap .best_title h1 {font-size:2.13rem;}
-    #wrap main .best_wrap .best_title p{font-size:0.94rem;}
     #wrap main .best_wrap .option {justify-content:space-between; margin:auto 80px; padding-bottom:10px;}
     #wrap main .best_wrap .best_product_wrap .product_bnr {display:none;}
     #wrap main .best_wrap .best_product_wrap .product { width:100%;}
@@ -30,10 +30,17 @@
     #wrap main .mid_bnr h1 {font-size:1.13rem;}
     #wrap main .mid_bnr a {padding:3px 10px; font-size:0.63rem;}
     /* ======================================================main-gift_wrap */
+    #wrap main .gift_wrap .option {}
     /* ======================================================main-collections_wrap */
+    /* ================================================콜렉션 상품 소개 텍스트 공통 (제목 내용)*/
+    .promo_wrap .promo_txt h1 {font-size:1.25rem;}
+    .promo_wrap .promo_txt h1 span {font-size:1.5rem;}
+    .promo_wrap .promo_txt p {font-size:0.94rem;margin-top:30px;}
     /* ======================================================main-collections_wrap disney */
+    #wrap main .collections_wrap .disney_wrap .promo_wrap .promo_bnr {width:558px;}
     /* ======================================================main-collections_wrap van */
     /* ======================================================main-inquiry */
+    #wrap main .inquiry {height:280px;}
     /* ======================================================footer */
 }
 @media screen and (max-width:393px) {}

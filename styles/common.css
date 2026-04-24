@@ -21,7 +21,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
 .option .sort .sort_tabs {border: #BABABA solid 1px;}
 .option .sort .sort_tabs .option {}
 /* ================================================상품 소개, 가격 공통*/
-.swiper .swiper-wrapper .swiper-slide p {font-size:0.75rem; color:#828282; margin:7px 0;}
+.swiper .swiper-wrapper .swiper-slide p {font-size:0.75rem; color:#828282; margin:5px 0;}
 .swiper .swiper-wrapper .swiper-slide .price {font-size:0.94rem; color:#000;}
 /* ================================================콜렉션 상품 소개 텍스트(제목 내용)*/
 .promo_wrap .promo_txt h1 {font-size:1.5rem; line-height:1.4;}
