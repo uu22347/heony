@@ -19,7 +19,7 @@
     #wrap main .intro h1::after {content: none;}
     #wrap main .intro p {font-size:1rem; text-align:center;} 
     /* ======================================================main-best_wrap */
-    #wrap main .best_wrap {margin:100px auto;}
+    #wrap main .best_wrap {margin:100px 80px;}
     #wrap main .best_wrap .option {justify-content:space-between; margin:auto 80px; padding-bottom:10px;}
     #wrap main .best_wrap .best_product_wrap .product_bnr {display:none;}
     #wrap main .best_wrap .best_product_wrap .product { width:100%;}
@@ -31,6 +31,7 @@
     /* ======================================================main-gift_wrap */
     #wrap main .gift_wrap .option {}
     /* ======================================================main-collections_wrap */
+    #wrap main .collections_wrap {min-width:none; margin:150px 0;}
     /* ================================================콜렉션 상품 소개 텍스트 공통 (제목 내용)*/
     .promo_wrap .promo_txt h1 {font-size:1.25rem;}
     .promo_wrap .promo_txt h1 span {font-size:1.5rem;}
