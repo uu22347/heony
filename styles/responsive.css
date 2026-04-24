@@ -1,13 +1,12 @@
-
+@media screen and (max-width:1800px) {
+    /* ======================================================header */
+    #wrap header {padding:0 80px;}
+    #wrap header .header_left {gap:20px;}
+    #wrap header .header_left #t_nav_open {display:block;}
+    #wrap header .header_left nav {display:none;}
+}
 @media screen and (max-width:1024px) {
     /* ======================================================header */
-    #wrap header {
-    height:65px;
-    justify-content: space-between;
-    padding: 0 80px;
-    }   
-    #wrap header .header_left #t_nav_open {display:block; padding-right:20px;}
-    #wrap header nav {display:none;}
     /* ======================================================main */
     /* ======================================================main  타이틀 공통*/
     .title h1 {font-size:2.13rem;}

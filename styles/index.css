@@ -12,21 +12,21 @@
 /* ======================================================header */
 #wrap header {
     width:100%; background-color:#302926; 
-    display:flex; padding:15px 0; 
-    justify-content: center; align-items: center;
-    position: fixed; z-index:999; height: 72px; min-width:1440px;
+    display:flex; padding:15px 240px; 
+    justify-content:space-between; align-items: center;
+    position: fixed; z-index:999; height: 72px;
 }
-#wrap header .header_left {display:flex; align-items:center;}
+#wrap header .header_left {display:flex; align-items:center; gap:50px;}
 #wrap header .header_left #t_nav_open {display:none;}
 #wrap header .header_left #t_nav_open img {width:100%;}
 #wrap header .header_left h1 {width:74px;}
 #wrap header .header_left h1 a {}
 #wrap header .header_left h1 a img {width:100%;}
-#wrap header nav {display:flex; margin-left:45px;}
-#wrap header nav #gnb_main {
+#wrap header .header_left nav {display:flex;}
+#wrap header .header_left nav #gnb_main {
     display:flex;
     position: relative; padding-right:30px;}
-#wrap header nav #gnb_main::before {
+#wrap header .header_left nav #gnb_main::before {
     content: "";
     position: absolute;
     right: -10px;
@@ -35,8 +35,8 @@
     width: 1px; height:10px;
     background-color: #fff; margin:0 35px;
 }
-#wrap header nav #gnb_main li {margin-right:30px;}
-#wrap header nav #gnb_main li a {
+#wrap header .header_left nav #gnb_main li {margin-right:30px;}
+#wrap header .header_left nav #gnb_main li a {
     display: block;  height: 100%; line-height:72px;
     color:#fff; font-size:0.81rem;
     position: relative; 
@@ -44,7 +44,7 @@
     align-items: center;
     height: 100%;
 }
-#wrap header nav #gnb_main li a::after {
+#wrap header .header_left nav #gnb_main li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -53,10 +53,10 @@
     height: 3px;
     background-color:#856363; transform: scaleX(0); transition: transform 0.3s ease;
 }
-#wrap header nav #gnb_main li a:hover::after {width: 100%; transform: scaleX(1);}
-#wrap header nav #gnb_promotion {display:flex;}
-#wrap header nav #gnb_promotion li {margin-right:25px;}
-#wrap header nav #gnb_promotion li a {
+#wrap header .header_left nav #gnb_main li a:hover::after {width: 100%; transform: scaleX(1);}
+#wrap header .header_left nav #gnb_promotion {display:flex;}
+#wrap header .header_left nav #gnb_promotion li {margin-right:25px;}
+#wrap header .header_left nav #gnb_promotion li a {
     display: block;  height: 100%; line-height:72px;
     color:#fff; font-size:0.81rem;  font-weight:300;
     position: relative; 
@@ -74,7 +74,7 @@
     background-color:#856363; transform: scaleX(0); transition: transform 0.3s ease;
 }
 #wrap header nav #gnb_promotion li a:hover::after {width:100%; transform: scaleX(1);}
-#wrap header .header_right {display: flex; flex-flow:row nowrap; align-items:center; margin-left:140px;}
+#wrap header .header_right {display: flex; flex-flow:row nowrap; align-items:center;}
 #wrap header .header_right .header_info {display:flex; gap:20px; }
 #wrap header .header_right .header_info li {text-align: center; position: relative;}
 #wrap header .header_right .header_info > li > a {
@@ -179,14 +179,16 @@
 }
 /* ======================================================main-mid_bnr */
 #wrap main .mid_bnr {
-    background-image:url(../images/common/mid_bnr_bg.jpg); height:290px;
+    background-image:url(../images/common/mid_bnr.jpg); 
+    background-position:center; background-size:100%;
+    height:290px;
     display:flex; flex-flow:column;
     justify-content:center; align-items:center;     
     text-align:center;
 }
-#wrap main .mid_bnr p {font-size:1.13rem; line-height:1.7;}
-#wrap main .mid_bnr h1 {font-size:1.5rem; line-height:1.4; padding-bottom:10px; font-weight:300;}
-#wrap main .mid_bnr a {border:1px solid #000; padding:3px 10px; font-size:0.75rem;}
+#wrap main .mid_bnr p {font-size:1.13rem; line-height:1.7; color:#fff;}
+#wrap main .mid_bnr h1 {font-size:1.5rem; line-height:1.4; padding-bottom:10px; font-weight:300; color:#fff;}
+#wrap main .mid_bnr a {padding:5px 10px; font-size:0.75rem; background-color:#fff;}
 /* ======================================================main-gift_wrap */
 #wrap main .gift_wrap {margin:120px 0;}
 #wrap main .gift_wrap .gift_title {}
