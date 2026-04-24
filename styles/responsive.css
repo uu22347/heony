@@ -1,26 +1,27 @@
 @media screen and (max-width:1800px) {
     /* ======================================================header */
-    #wrap header {padding:0 80px;}
-    #wrap header .header_left {gap:20px;}
-    #wrap header .header_left #t_nav_open {display:block;}
-    #wrap header .header_left nav {display:none;}
+    #wrap header .inner .header_left {gap:20px;}
+    #wrap header .inner .header_left #t_nav_open {display:block;}
+    #wrap header .inner .header_left nav {display:none;}
 }
+@media screen and (max-width:1440px) {}
 @media screen and (max-width:1024px) {
     /* ======================================================header */
+    #wrap {width:100%; margin: 0 auto;}
+    #wrap header {height:65px;}
+    #wrap header .inner {}
     /* ======================================================main */
     /* ======================================================main  타이틀 공통*/
     .title h1 {font-size:2.13rem;}
     .title p {font-size:0.94rem;}
     /* ======================================================main-hero_wrap */
-    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .swiper-slide {}
     /* ======================================================main-intro */
     #wrap main .intro {flex-flow:column; margin:30px 0;}
     #wrap main .intro h1 {margin-right:0; padding-right:0;}
     #wrap main .intro h1::after {content: none;}
     #wrap main .intro p {font-size:1rem; text-align:center;} 
     /* ======================================================main-best_wrap */
-    #wrap main .best_wrap {margin:100px 80px;}
-    #wrap main .best_wrap .option {justify-content:space-between; margin:auto 80px; padding-bottom:10px;}
+    #wrap main .best_wrap .option {padding-bottom:10px;}
     #wrap main .best_wrap .best_product_wrap .product_bnr {display:none;}
     #wrap main .best_wrap .best_product_wrap .product { width:100%;}
     /* ======================================================main-mid_bnr */
@@ -31,7 +32,6 @@
     /* ======================================================main-gift_wrap */
     #wrap main .gift_wrap .option {}
     /* ======================================================main-collections_wrap */
-    #wrap main .collections_wrap {min-width:none; margin:150px 0;}
     /* ================================================콜렉션 상품 소개 텍스트 공통 (제목 내용)*/
     .promo_wrap .promo_txt h1 {font-size:1.25rem;}
     .promo_wrap .promo_txt h1 span {font-size:1.5rem;}
