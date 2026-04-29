@@ -10,6 +10,12 @@
     #wrap {width:100%; margin: 0 auto;}
     #wrap header {height:65px;}
     #wrap header .inner {}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/common/main_bnr01_t.jpg);}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide1 a {height:900px;}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/common/main_bnr02_t.jpg);}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide2 a {height:900px;}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide3 {background-image: url(../images/common/main_bnr03_t.jpg);}
+    #wrap main .hero_wrap .hero_bnr .swiper-wrapper .slide3 a {height:900px;}
     /* ======================================================main */
     /* ======================================================main  타이틀 공통*/
     .title h1 {font-size:2.13rem;}
@@ -43,4 +49,8 @@
     #wrap main .inquiry {height:280px;}
     /* ======================================================footer */
 }
-@media screen and (max-width:393px) {}
+@media screen and (max-width:393px) {
+    #wrap header {min-width:390px;}
+    #wrap main {min-width:390px;}
+    #wrap footer {min-width:390px;}
+}
